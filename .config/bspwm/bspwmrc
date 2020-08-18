@@ -7,6 +7,8 @@ $HOME/.config/bspwm/autostart.sh
 
 pgrep bspswallow || $HOME/.bin/bspswallow &
 
+#pgrep pidswallaw || $HOME/.bin/pidswallow --loop &
+
 #BSPWM configuration
 #bspc config border_radius       8
 bspc config border_width         2
@@ -85,7 +87,9 @@ bspc rule -a Xfce4-settings-manager state=tiled
 bspc rule -a Zathura state=tiled
 
 #open applications on specific workspaces
-#bspc rule -a Firefox desktop='^1' follow=on
+#bspc rule -a Brave-browser state=tiled
+bspc rule -a Brave-browser desktop=^2 follow=on state=tiled
+#bspc rule -a firefox desktop=^1 follow=on
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl3 desktop='^2' follow=on
@@ -96,7 +100,7 @@ bspc rule -a Zathura state=tiled
 #bspc rule -a Vivaldi-stable desktop='^6' follow=on
 #bspc rule -a Vivaldi-snapshot desktop='^6' follow=on
 #bspc rule -a Transmission-gtk desktop='^7' follow=on
-#bspc rule -a Thunar desktop='^8' follow=on
+bspc rule -a Thunar desktop=^3 follow=on
 #bspc rule -a discord desktop='^9' follow=on
 #bspc rule -a Spotify desktop='^10' follow=on
 

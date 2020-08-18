@@ -1182,7 +1182,7 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %d %b "
+date = " %a %d %b "
 ;date = " %Y-%m-%d%"
 date-alt = " %d-%m-%Y"
 time = %H:%M
@@ -1581,7 +1581,7 @@ interval = 1
 
 ;format = <label>
 format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+
 format-padding = 2
 format-underline = #0f0
 format-prefix = "  "

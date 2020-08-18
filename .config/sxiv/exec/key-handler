@@ -1,0 +1,21 @@
+#!/bin/sh
+
+
+# Trash marked images usage:  Ctrl + X then Ctrl + D
+while read file
+do
+        case "$1" in
+# trash marked images (maybe you need to create the ~/.local/share/Trash/files)
+        "C-d")
+                mv "$file" ~/.local/share/Trash/files ;;
+# copy marked images
+        "C-y")
+                mkdir -p  ~/IMAGES_COPIED &&  mv  "$file"  ~/IMAGES_COPIED ;;
+# move marked images
+        "C-m")
+                mkdir -p  ~/IMAGES_SELECTED &&  mv  "$file"  ~/IMAGES_SELECTED ;;
+# clean cache and trash
+        "C-f")
+                cd ~/.cache/sxiv && \rm -fr *   &&   cd  ~/.local/share/Trash/files  &&  \rm -fr *  ;;
+         esac
+done

@@ -6,6 +6,17 @@
 #export ZSH="/home/$USER/.oh-my-zsh"
 #installation via yay -S oh-my-zsh-git
 export ZSH=/usr/share/oh-my-zsh/
+export EDITOR="nvim"
+export READER="zathura"
+export VISUAL="nvim"
+export TERMINAL="termite"
+export BROWSER="brave"
+export VIDEO="mpv"
+export IMAGE="sxiv"
+export COLORTERM="truecolor"
+export OPENER="xdg-open"
+export PAGER="less"
+export WM="bspwm"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

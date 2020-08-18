@@ -1,0 +1,11 @@
+#!/bin/bash
+cp {~/.zshrc,~/.zshrc-personal} ~/.local/src/dactom/dotfiles
+cp -r ~/.vim ~/.local/src/dactom/dotfiles
+cp -r ~/.config/zathura ~/.local/src/dactom/dotfiles/.config
+cp -r ~/.config/termite ~/.local/src/dactom/dotfiles/.config
+cp -r ~/.config/bspwm ~/.local/src/dactom/dotfiles/.config
+cp -r ~/.config/nvim ~/.local/src/dactom/dotfiles/.config
+cp -r ~/.config/polybar ~/.local/src/dactom/dotfiles/.config
+cp -r ~/.bin ~/.local/src/dactom/dotfiles
+cp -r ~/.config/sxiv ~/.local/src/dactom/dotfiles/.config
+cp -r ~/.config/ranger ~/.local/src/dactom/dotfiles/.config
