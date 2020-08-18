@@ -1,3 +1,4 @@
 alias vim='nvim'
 alias v='nvim'
 alias sudo='sudo '
+alias cube='ssh -p 2828 192.168.0.20'

@@ -8,12 +8,17 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 Plug 'vimwiki/vimwiki'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'farmergreg/vim-lastplace'
+Plug 'morhetz/gruvbox'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-set bg=light
+autocmd vimenter * colorscheme gruvbox
+set background=dark
+" let g:airline_theme='gruvbox'
+:let g:airline_theme='onedark'
 set go=a
 set mouse=a
 nnoremap <space><space> :noh<return><esc>
