@@ -127,7 +127,7 @@ if [ -d "$HOME/.local/bin" ] ;
 fi
 
 #list
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'

@@ -15,7 +15,7 @@ Plug 'morhetz/gruvbox'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
-autocmd vimenter * colorscheme gruvbox
+colorscheme gruvbox
 set background=dark
 " let g:airline_theme='gruvbox'
 :let g:airline_theme='onedark'
